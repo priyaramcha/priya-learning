@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/da82937887.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"rel="stylesheet"/>
     <style>
         *{
             margin: 0;
             padding: 0;
         }
-        main{
+        .container{
             border: 1px solid;
             width: 70%;
             margin: auto;
-            height: 100vh;
+            /* height: 100vh; */
         }
         header{
             padding: 20px;
@@ -36,6 +38,7 @@
             padding: 20px;
             border-left: 1px solid rgb(87, 87, 87);
             display: block;
+            transition: background-color 0.5s;
         }
         ul{
             display: flex;
@@ -49,10 +52,102 @@
         a:hover{
             background-color: #dc0505;
         }
+        main{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+        h4{
+            font-size: 21px;
+            cursor: pointer;
+            width: fit-content;
+        }
+        h4:hover{
+            color: #dc0505;
+        }
+        .linecol{
+            border-color: rgba(253, 252, 252, 0.968);
+        }
+        .left{
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            padding: 20px;
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            padding: 20px;
+        }
+        .search{
+            border: 14px solid rgb(243, 242, 242);
+        }
+        .search input{
+            width: 211px;
+            padding: 5px;
+        }
+        .textang a{
+            color: black;
+            padding: 0px;
+            margin-top: 5px;
+            border-left: none;
+            transition: color 0.5s;
+            background-color: unset;
+            /* transition: ba; */
+        }
+        .textang hr{
+            border: 1px solid rgb(242, 242, 242);
+            margin-top: 5px;
+        }
+        .textang a:hover{
+            color: #dc0505;
+            /* background-color: none; */
+        }
+        .numbe{
+            padding: 12px;
+            text-align: center;
+            color: white;
+            background-color: #dc0505;
+            margin-left: 20px;
+            display: inline-block;
+        }
+        .page{
+            padding: 12px;
+            /* text-align: center; */
+            background-color: #eeeeee;
+            margin-left: 2px;
+            display: inline-block;
+        }
+        .page:hover{
+            background-color: #dc0505;
+        }
+        footer{
+            background-color: black;
+            width: 100%;
+        }
+        footer p{
+            color: rgb(219, 218, 218);
+            display: flex;
+            flex-direction: row;
+            padding: 10px 10px 10px 20px;
+            text-align: center;
+            font-size: 12px;
+            gap: 5px;
+        }
+        footer a{
+            background-color: unset;
+            border-left: none;
+            padding: unset;
+        }
+        footer a:hover{
+            background-color: unset;
+            
+        }
+
     </style>
 </head>
 <body>
-    <main>
+    <div class="container">
         <header>
         <h1>ILUGC</h1>
         <h3>Indian Linux User's Group - Chennai (Madras)</h3>
@@ -68,7 +163,117 @@
             </ul>    
             
         </nav>
-        
-    </main>
+        <main>
+            <div class="left">
+                <h4>Meeting Minutes, January 10, 2026</h4>
+                <p class="clock"><i class="fa-regular fa-clock"></i>January 11, 2026</p>
+                <p class="paragraph">
+                    Here is the quick recap of what happend in ILUGC Monthly meet, January 10, 2026. Intro Mohan welcomed participants and gave small introduction about ILUGC Talk 0 Sridhar started his talk about Digital publication Explained about traditional publication and compared it with digital publication Explained more about different formats available for digital publication Explained about epub and its importance in digital publication Explained why epub don’t have page numbers concept Showed simple way to create epub using Calibre Talk 1 Narenderan started his talk about Learning linux on Android Explained about various way you can reach a terminal in android (adb shell or termux) Showed how to use adb shell to connect your android device from your laptop Showed how to install termux and start a terminal Showed how to use andronix to create a full fledged xfce desktop environment in android Showed how to use VNC to connect to the desktop environment running in android from the laptop Talk 2 Mohan started his talk about Pipewire Showed how to gather information about Sound Hardware from various files in /proc/asound directory Explained the important of ALSA, briefed about various sound devices available in /dev/snd directory Explained why Sound Manager or Sound Server is important for Linux Explained about PulseAudio and its significance of modernizing the Audio Infrastructure in Linux Explained about Pipewire and why it was needed compared to PulseAudio Explained various tools used to intract with Pipewire components After talks discussion In a lively discussion Mohan continued playing around pipewire daemon by killing them and trying to directly send random data to /dev/snd/pcmC0D0p Participants Introduced themself and their experience getting to know about Linux and why they come to ILUGC Meet.
+
+                </p>
+                <hr class="linecol">
+
+                <h4>Old School Socializing</h4>
+                <p class="clock"><i class="fa-regular fa-clock"></i>January 11, 2026</p>
+                <p class="paragraph">
+                    Human interaction has taken many forms since the dawn of the internet. From the humble beginnings of electronic mails, we now live in an era of instant messaging where the experience of communication afforded by platforms like Whatsapp or Telegram is nothing short of seamless. Provided that you have an account in these services, they allow you to call, text and even share any kind of multimedia content to another person using the same service.
+                </p>
+                <hr class="linecol">
+
+                <h4>ILUGC Monthly Meet - January 10, 2026 - 15:00 (3.00 PM) IST - IITM</h4>
+                <p class="clock"><i class="fa-regular fa-clock"></i>January 09, 2026</p>
+                <p class="paragraph">
+                    Indian Linux Users Group, Chennai [ ILUGC ] has been spreading awareness on Free/Open Source Software (F/OSS) in Chennai since January 1998. For the month of January 2026, we shall meet Physically at Indian Institute Of Technology Madras (IITM), Aerospace Engineering. Registered participants through https://register.ilugc.in arriving at IITM gates need to tell that you are there to attend “ILUGC Monthly Meet” so that IITM security will verify your details and allow you to get in.
+                </p>
+                <hr class="linecol">
+
+                <h4>Meeting Minutes, December 13, 2025</h4>
+                <p class="clock"><i class="fa-regular fa-clock"></i>December 14, 2025</p>
+                <p class="paragraph">
+                    Here is the quick recap of what happend in Ilugc Monthly meet, Dec 13, 2025. Intro Mohan welcomed participants Talk 0 Gopinathan started explaining about his experience debugging a broken window environment issue During switching from KDE to Gnome, his packages screwed up and ended up without any Graphical Environment The switch triggered segfault whenever Xorg starts With help from mohan, Gopinathan installed official nvidia drivers properly Issue got fixed Talk 1 Irfan started his speech about IRC and Tilde communities Explained what IRC means, history of IRC, how it works Briefed about how to join IRC server, how to discover channels, how to join a particular channel etc.
+                </p>
+                <hr class="linecol">
+
+                <h4>ILUGC Monthly Meet - December 13, 2025 - 15:00 (3.00 PM) IST - IITM</h4>
+                <p class="clock"><i class="fa-regular fa-clock"></i>December 12, 2025</p>
+                <p class="paragraph">
+                    Indian Linux Users Group, Chennai [ ILUGC ] has been spreading awareness on Free/Open Source Software (F/OSS) in Chennai since January 1998. For the month of December 2025, we shall meet Physically at Indian Institute Of Technology Madras (IITM), Aerospace Engineering. Registered participants arriving at IITM gates need to tell that you are there to attend “ILUGC Monthly Meet” so that IITM security will verify your details and allow you to get in.
+                </p>
+                <hr class="linecol">
+                
+                <h4>Meeting Minutes, November 8, 2025</h4>
+                <p class="clock"><i class="fa-regular fa-clock"></i>November 09, 2025</p>
+                <p class="paragraph">
+                    Here is the quick recap of what happend in Ilugc Monthly meet, Nov 8, 2025. Intro Mohan welcomed participants Participants introduced themselves Talk 0 Mohan started explaining about process isolation Explained how file system isolation of a process traditionally achieved through chroot for long time in Unix based systems Explained how modern linux have more types of process isolation including file system isolation using namespaces Explained different container systems like lxc, systemd-nspawn, docker and podman Showed that container images are nothing but root file system packed in a particular way Explained what is scratch containers and demonstrated how it can be used to reduce the container image Talk 1 Nihaal started explaining about basic security in Linux Explained how Discretionary Access Control (DAC) traditionally used to protect files and directories in Unix based systems Explained Permission bits in DAC and explained the drawbacks in DAC Introduced audiance to Mandatory Access Control (MAC) Policies and different way to implement MAC using Security Modules like AppArmor, Selinux Explained about AppArmor and how security gets implemented through its security profile files Explained about SELinux and how security get implemented through security context labels using file system’s extended attributes (xattrs) After talks discussion More participants introduced themselves Mohan provided popular FOSS news from the last week Participants had lively discussion about Debian apt Rust dependency, Archinstall script, gaming on linux, Gnome's Xorg decommission etc.
+                </p>
+                <hr class="linecol">
+
+                <h4>ILUGC Monthly Meet - November 8, 2025 - 15:00 (3.00 PM) IST - IITM</h4>
+                <p class="clock"><i class="fa-regular fa-clock"></i>November 07, 2025</p>
+                <p class="paragraph">
+                    Indian Linux Users Group, Chennai [ ILUGC ] has been spreading awareness on Free/Open Source Software (F/OSS) in Chennai since January 1998. For the month of November 2025, we shall meet Physically at Indian Institute Of Technology Madras (IITM), Aerospace Engineering. Registered participants arriving at IITM gates need to tell that you are there to attend “ILUGC Monthly Meet” so that IITM security will verify your details and allow you to get in.
+                </p>
+                <hr class="linecol">
+
+                <h4>Meeting Minutes - ILUGC Meet, October 11, 2025 (Physical, IITM)</h4>
+                <p class="clock"><i class="fa-regular fa-clock"></i>October 12, 2025</p>
+                <p class="paragraph">
+                    Here is the quick recap of what happend in Ilugc Monthly meet, Oct 11, 2025. Intro Mohan welcomed participants and give intro about ILUGC Thanked the friend from IITM who helped to resume ILUGC in IITM again Talk 0 Briefly talk about what is Graphical Environment Explained wayland protocol, what is compositors, what is framebuffers and what is textures Explained how an image gets displayed Explained different types of Graphical applications Briefly explained what is pixel format and how an Image data stored in a array Talk 1 Nihaal briefly explained what is compiler and the difference between compiler and interpreter Explained about LLVM’s architecture and briefly explained about LLVM-IR language Explained compiler optimization and how it is achieved in LLVM through passes Briefly explained two simple LLVM passes The first example pass collected details about branching and saved it in a dotfile, then using xdot to show the graph diagram The second example pass collected details about function calls one function can call and saved it in a dotfile, then using xdot to show the graph diagram After talks discussion discussed about what all important events happend from the last physical meet in IITM till this physical meeting discussed about various important FOSS new from the last week Took group photo Windup
+                </p>
+                <hr class="linecol">
+
+                <h4>ILUGC Meet, October 11, 2025 (Physical, IITM)</h4>
+                <p class="clock"><i class="fa-regular fa-clock"></i>October 10, 2025</p>
+                <p class="paragraph">
+                    Hi, Indian Linux Users Group, Chennai [ ILUGC ] has been spreading awareness on Free/Open Source Software (F/OSS) in Chennai since January 1998. For the month of October, 2025 we shall meet Physically at Indian Institute Of Technology Madras (IITM), Aerospace Engineering. Time: 15:00 (3.00 PM) IST Place: OSM: https://www.openstreetmap.org/?#map=19/12.991898/80.228289&layers=T GM: https://www.google.com/maps/search/?api=1&query=12.991861%2C%2080.22848 Talk details Talk 0 Topic: Introduction to wlroots (Backbone of Wayland Compositors) Description: In this talk we will get to know about what is Wayland, what are compositors, and generally how the Linux graphics stack works.
+                </p>
+                <hr class="linecol">
+
+                <h4>ILUGC Online Monthly Meet - September 13, 2025 - 2.00 PM IST</h4>
+                <p class="clock"><i class="fa-regular fa-clock"></i>September 12, 2025</p>
+                <p class="paragraph">
+                    Indian Linux Users Group, Chennai [ ILUGC ] has been spreading awareness on Free/Open Source Software (F/OSS) in Chennai since January 1998. We usually meet on the second Saturday of every month, and for the month of September, we shall meet through Jitsi on Saturday September 13, 2025 at 1400 IST. Meet Link Talk Details Talk 0 Topic: Display Managers Description: Introduction to Display Managers, what they do and why we need display manager in our Linux Desktop Environments.
+                </p>
+                <hr class="linecol">
+            </div>
+            <div class="right">
+                <div class="search">
+                    <input type="text" id="inputxt" placeholder="Search...">
+                </div>
+                <h5 style="font-size: 19px;margin-top: 14px;">RECENT POSTS</h5>
+                <div style="width: 100%;height: 3px;background-color: #dc0505;"></div>
+                <div class="textang">
+                    <a>Meeting Minutes, January 10, 2026</a>
+                    <hr class="textlin">
+                    <a>Old School Socializing</a>
+                    <hr class="textlin">
+                    <a>ILUGC Monthly Meet - January 10, 2026 - 15:00 (3.00 PM) IST - IITM</a>
+                    <hr class="textlin">
+                    <a>Meeting Minutes, December 13, 2025</a>
+                    <hr class="textlin">
+                    <a>ILUGC Monthly Meet - December 13, 2025 - 15:00 (3.00 PM) IST - IITM</a>
+                    <hr class="textlin">
+                    <a>Meeting Minutes, November 8, 2025</a>
+                    <hr class="textlin">
+                    <a>ILUGC Monthly Meet - November 8, 2025 - 15:00 (3.00 PM) IST - IITM</a>
+                    <hr class="textlin">
+                    <a>Meeting Minutes - ILUGC Meet, October 11, 2025 (Physical, IITM)</a>
+                    <hr class="textlin">
+                    <a>ILUGC Meet, October 11, 2025 (Physical, IITM)</a>
+                    <hr class="textlin">
+                    <a>ILUGC Online Monthly Meet - September 13, 2025 - 2.00 PM IST</a>
+                    <hr class="textlin">
+                </div>
+            </div>
+            <div style="display: block;">
+            <div class="numbe">1/11</div>
+            <div class="page"><i class="ri-arrow-right-double-fill"></i></div>
+            </div>
+            
+        </main>
+        <footer>
+                <p>© 2026 ILUGC. Generated with <a href="">Hugo</a> and <a href="">Mainroad</a> theme.</p>
+            </footer>
+    </div>
 </body>
 </html>
