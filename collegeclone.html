@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <title>Document</title>
     <style>
     *{
@@ -112,24 +113,36 @@
     }
     .passion{
         display: grid;
-        max-width: 87vw;
+        max-width: 69vw;
         grid-template-columns: 1fr 1fr;
         margin: auto;
         margin-top: 10px;
+        gap: 10px;
+        height: 40vh;
     }
-@font-face {
-  font-family: "iconfont";
-  src: url("iconfont.woff2") format("woff2"),
-       url("iconfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-.test-icon {
-  font-family: "iconfont"; /* Use your font */
-  font-size: 40px;
-  color: red;
-}
+    .live{
+        padding: 17px;
+    }
+    .live h3{
+        font-family: 'Montserrat';
+        font-size: 19px;
+        color: #333333;
+    }
+    .live p{
+        color: #333333;
+        font-family: arial;
+    }
+    .iconscpl{
+        background-color: #8e44ad;
+        width: 7vw;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .iconscpl i{
+        font-size: 5vh;
+    }
 
     </style>
 </head>
@@ -220,21 +233,19 @@
                 </div>
             </div>
             <div style="margin-top: 40px;height: 500px;border: 1px solid red;">
-                <!-- <div class="passion">
-                    <div style="display: flex;flex-direction: row;">
-                        <div style="background-color: #050563;width: 90px;color: #99b5cb;"><span><i class="icon-learning"></i></span></div>
-                        <div>
+                <div class="passion">
+                    <div style="display: flex;flex-direction: row;border: 2px solid #8e44ad;border-radius: 5px;">
+                        <div class="iconscpl"><span><i class="ri-home-2-line"></i></span></div>
+                        <div class="live">
                             <h3>LIVE WIRE</h3>
                             <p>If creative writing is your passion, then you would probably enjoy a career in which you could spend all day pursuing that passion...</p>
-                            <a href="">Read More
-                                <i></i>
-                            </a>
+                            <a href="">Read More<i class="ri-arrow-right-s-line"></i></a>
                         </div>
                         
                     </div>
                     <div></div>
                     <div></div>
-                </div> -->
+                </div>
                 <span class="test-icon">&#xe91b;</span>
 
 
@@ -244,7 +255,6 @@
     
 </body>
 </html>
-<i class="ri-home-2-line"></i>
 <i class="ri-bar-chart-2-line"></i>
 <i class="ri-presentation-fill"></i>
 <i class="ri-map-pin-line"></i>
