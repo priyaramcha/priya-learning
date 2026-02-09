@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Document</title>
     <style>
     *{
@@ -118,31 +119,61 @@
         margin: auto;
         margin-top: 10px;
         gap: 10px;
-        height: 40vh;
+        height: 37vh;
     }
     .live{
         padding: 17px;
     }
-    .live h3{
-        font-family: 'Montserrat';
-        font-size: 19px;
+    .live h4{
+        font-family: 'Montserrat',sans-serif;
+        font-size: 17px;
         color: #333333;
     }
     .live p{
         color: #333333;
         font-family: arial;
+        margin-top: 7px;
+        font-size: 15px;
+        line-height: 20px;
     }
-    .iconscpl{
-        background-color: #8e44ad;
+    .iconscpl, .iconscplq{
         width: 7vw;
         color: white;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .iconscpl i{
+    .iconscpl i, .iconscplq i{
         font-size: 5vh;
     }
+    .live a{
+        float: right;
+        font-family:'Montserrat';
+        color: #333333;
+        margin-top: 7px;
+        text-decoration: none;
+        font-size: 15px;
+
+    }
+    .livecon:hover{
+        background-color: #8e44ad;
+    }
+    .live h4:hover{
+        color: white;
+    }
+    .live p:hover{
+        color: white;
+    }
+    .live a:hover{
+        color: white;
+    }
+    .live i:hover{
+        color: white;
+    }
+    .livecon {
+    transition: background-color 0.3s ease;
+    }
+    
 
     </style>
 </head>
@@ -234,19 +265,50 @@
             </div>
             <div style="margin-top: 40px;height: 500px;border: 1px solid red;">
                 <div class="passion">
-                    <div style="display: flex;flex-direction: row;border: 2px solid #8e44ad;border-radius: 5px;">
-                        <div class="iconscpl"><span><i class="ri-home-2-line"></i></span></div>
+                    <div class="livecon" style="display: flex;flex-direction: row;border: 2px solid #8e44ad;border-radius: 5px;">
+                        <div class="iconscpl" style="background-color: #8e44ad;"><span><i class="ri-home-2-line"></i></span></div>
                         <div class="live">
-                            <h3>LIVE WIRE</h3>
+                            <h4>LIVE WIRE</h4>
                             <p>If creative writing is your passion, then you would probably enjoy a career in which you could spend all day pursuing that passion...</p>
                             <a href="">Read More<i class="ri-arrow-right-s-line"></i></a>
                         </div>
                         
                     </div>
-                    <div></div>
-                    <div></div>
+
+                  <div class="livecon" style="display: flex;flex-direction: row;border: 2px solid #2dcc70;border-radius: 5px;">
+                        <div class="iconscplq" style="background-color: #2dcc70;"><span><i class="ri-home-2-line"></i></span></div>
+                        <div class="live">
+                            <h4>Laurels</h4>
+                            <p>UGC has granted college with potential for excellence ...</p>
+                            <a href="">Read More<i class="ri-arrow-right-s-line"></i></a>
+                        </div>
+                        
+                    </div>
+
+
+                    <div class="livecon" style="display: flex;flex-direction: row;border: 2px solid #8e44ad;border-radius: 5px;">
+                        <div class="iconscpl" style="background-color: #8e44ad;"><span><i class="ri-home-2-line"></i></span></div>
+                        <div class="live">
+                            <h4>LIVE WIRE</h4>
+                            <p>If creative writing is your passion, then you would probably enjoy a career in which you could spend all day pursuing that passion...</p>
+                            <a href="">Read More<i class="ri-arrow-right-s-line"></i></a>
+                        </div>
+                        
+                    </div>
+
+                  <div class="livecon" style="display: flex;flex-direction: row;border: 2px solid #2dcc70;border-radius: 5px;">
+                        <div class="iconscplq" style="background-color: #2dcc70;"><span><i class="ri-home-2-line"></i></span></div>
+                        <div class="live">
+                            <h4>Laurels</h4>
+                            <p>UGC has granted college with potential for excellence ...</p>
+                            <a href="">Read More<i class="ri-arrow-right-s-line"></i></a>
+                        </div>
+                        
+                    </div>
+
                 </div>
-                <span class="test-icon">&#xe91b;</span>
+
+                
 
 
 
